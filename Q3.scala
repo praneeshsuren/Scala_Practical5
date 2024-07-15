@@ -5,9 +5,9 @@ def fibonacci(n: Int): Seq[Int] = {
     else {
         var fibSeq = Seq(0, 1)
         for (i <- 2 until n) {
-            fibSeq = fibSeq :+ fibSeq(i-1) + fibSeq(i-2)
+            fibSeq = fibSeq :+ (fibSeq(i-1) + fibSeq(i-2))
         }
-        fibSeq
+        return fibSeq
     }  
 }
 
