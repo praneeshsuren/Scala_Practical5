@@ -19,5 +19,5 @@ def fibonacci(n: Int): Seq[Int] = {
         return
     }
     val fibSeq = fibonacci(n)
-    println(fibSeq.mkString(", "))
+    println(fibSeq.mkString("[ ",", "," ]"))
 }
